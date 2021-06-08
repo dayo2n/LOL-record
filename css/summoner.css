@@ -1,0 +1,49 @@
+/* 소환사 검색시 나타나는 페이지  */
+.fieldset_summoner {
+  text-align: center;
+  width: 40%;
+}
+.fieldset_challenger_summoner {
+  text-align: center;
+  width: 45%;
+}
+#summoner_icon {
+  border-radius: 15%;
+  width: 80px;
+  filter: drop-shadow(5px 5px 5px #17283a);
+  margin-top: 15px;
+}
+.main_challenger {
+  display: inline-flex;
+  width: 100%;
+  flex-direction: column;
+}
+
+.double_column {
+  display: inline-flex;
+}
+
+.tier_solo {
+  text-align: center;
+}
+#summoner_tier_img {
+  width: 70px;
+}
+
+#spec_summoner_icon {
+  border-radius: 15%;
+  width: 30px;
+  filter: drop-shadow(5px 5px 5px #17283a);
+  margin-top: 15px;
+}
+
+.main_search {
+  display: inline-flex;
+  width: 100%;
+}
+
+.fieldset_match {
+  width: 60%;
+  display: inline-flex;
+  flex-direction: row;
+}

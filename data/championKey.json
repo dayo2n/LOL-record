@@ -1,0 +1,267 @@
+for($j=0; $j<10; $j++){
+    $tmpParticipant = $tmpMatchInfo[participants][$j][champhonId];
+    switch ($tmpParticipant) {
+      case 412:
+        $championKey = "Thresh";
+        break;
+      case 23:
+        $championKey = "Tryndamere";
+        break;
+      case 79:
+        $championKey = "Gragas";
+      break;
+      case 69: 
+        $championKey = "Cassiopeia";
+      break;
+      case 136: 
+        $championKey ="Aurelion Sol";
+      break;
+      case 13: 
+        $championKey = "Ryze";
+      break;
+      case 78: 
+        $championKey = "Poppy";
+      break;
+      case 14: 
+        $championKey ="Sion";
+      break;
+      case 1: 
+        $championKey = "Annie";
+      break;
+      case 202: 
+        $championKey = "Jhin";
+      break;
+      case 43: 
+        $championKey = "Karma";
+      break;
+      case 111: 
+        $championKey = "Nautilus";
+      break;
+      case 240: 
+        $championKey ="Kled";
+      break;
+      case 99: 
+        $championKey ="Lux";
+      break;
+      case 103: 
+        $championKey ="Ahri";
+      break;
+      case 2: 
+        $championKey = "Olaf";
+      break;
+      case 112: 
+        $championKey ="Viktor";
+      break;
+      case 34: 
+        $championKey = "Anivia";
+      break;
+      case 27: 
+        $championKey = "Singed";
+      break;
+      case 86: 
+        $championKey = "Garen";
+      break;
+      case 127: 
+        $championKey = "Lissandra";
+      break;
+      case 57: 
+        $championKey = "Maokai";
+      break;
+      case 25: 
+        $championKey = "Morgana";
+      break;
+      case 28: 
+        $championKey = "Evelynn";
+      break;
+      case 105:
+        $championKey = "Fizz";
+      break;
+      case 74: 
+        $championKey = "Heimerdinger";
+      break;
+      case 238: 
+        $championKey ="Zed";
+      break;
+      case 68: 
+        $championKey = "Rumble";
+      break;
+      case 82: 
+        $championKey = "Mordekaiser";
+      break;
+      case 37: 
+        $championKey = "Sona";
+      break;
+      case 96: 
+        $championKey ="Kog'Maw";
+      break;
+      case 55: 
+        $championKey ="Katarina";
+      break;
+      case 117: 
+        $championKey = "Lulu";
+      break;
+      case 22: 
+        $championKey = "Ashe";
+      break;
+      case  30: 
+        $championKey = "Karthus";
+      break;
+      case  12: 
+        $championKey = "Alistar";
+      break;
+      case  122: 
+        $championKey = "Darius";
+      break;
+      case  67: 
+        $championKey = "Vayne";
+      break;
+      case  110: 
+        $championKey = "Varus";
+      break;
+      case  77: 
+        $championKey = "Udyr";
+      break;
+      case  89: 
+        $championKey = "Leona";
+      break;
+      case  126: 
+        $championKey ="Jayce";
+      break;
+      case  134: 
+        $championKey = "Syndra";
+      break;
+      case  80: 
+        $championKey = "Pantheon";
+      break;
+      case  92: 
+        $championKey = "Riven";
+      break;
+      case  121: 
+        $championKey = "Kha'Zix";
+      break;
+      case  42: 
+        $championKey = "Corki";
+      break;
+      case 268: 
+        $championKey = "Azir";
+      break;
+      case  51: 
+        $championKey = "Caitlyn";
+      break;
+      case  76: 
+        $championKey = "Nidalee";
+      break;
+      case  85: 
+        $championKey = "Kennen";
+      break;
+      case  3: 
+        $championKey = "Galio";
+      break;
+      case  45: 
+        $championKey =  "Veigar";
+      break;
+      case  432: 
+        $championKey = "Bard";
+      break;
+       case 150: 
+        $championKey = "Gnar";
+       break;
+      case  90: 
+        $championKey = "Malzahar";
+      break;
+      case  104: 
+        $championKey = "Graves";
+      break;
+      case 245:
+        $championKey = "Ekko";
+      break;
+        // 254: "Vi",
+        // 10: "Kayle",
+        // 39: "Irelia",
+        // 64: "Lee Sin",
+        // 420: "Illaoi",
+        // 60: "Elise",
+        // 106: "Volibear",
+        // 20: "Nunu",
+        // 4: "Twisted Fate",
+        // 24: "Jax",
+        // 102: "Shyvana",
+        // 429: "Kalista",
+        // 36: "Dr. Mundo",
+        // 427: "Ivern",
+        // 131: "Diana",
+        // 223: "Tahm Kench",
+        // 63: "Brand",
+        // 113: "Sejuani",
+        // 8: "Vladimir",
+        // 154: "Zac",
+        // 421: "Rek'Sai",
+        // 133: "Quinn",
+        // 84: "Akali",
+        // 163: "Taliyah",
+        // 18: "Tristana",
+        // 120: "Hecarim",
+        // 15: "Sivir",
+        // 236: "Lucian",
+        // 107: "Rengar",
+        // 19: "Warwick",
+        // 72: "Skarner",
+        // 54: "Malphite",
+        // 157: "Yasuo",
+        // 101: "Xerath",
+        // 17: "Teemo",
+        // 75: "Nasus",
+        // 58: "Renekton",
+        // 119: "Draven",
+        // 35: "Shaco",
+        // 50: "Swain",
+        // 91: "Talon",
+        // 40: "Janna",
+        // 115: "Ziggs",
+        // 61: "Orianna",
+        // 114: "Fiora",
+        // 9: "Fiddlesticks",
+        // 31: "Cho'Gath",
+        // 33: "Rammus",
+        // 7: "LeBlanc",
+        // 16: "Soraka",
+        // 26: "Zilean",
+        // 56: "Nocturne",
+        // 222: "Jinx",
+        // 83: "Yorick",
+        // 6: "Urgot",
+        // 203: "Kindred",
+        // 21: "Miss Fortune",
+        // 62: "Wukong",
+        // 53: "Blitzcrank",
+        // 98: "Shen",
+        // 201: "Braum",
+        // 5: "Xin Zhao",
+        // 29: "Twitch",
+        // 11: "Master Yi",
+        // 44: "Taric",
+        // 32: "Amumu",
+        // 41: "Gangplank",
+        // 48: "Trundle",
+        // 38: "Kassadin",
+        // 161: "Vel'Koz",
+        // 143: "Zyra",
+        // 267: "Nami",
+        // 59: "Jarvan IV",
+        // 81: "Ezreal",
+        // 350: "Yuumi",
+        // 145: "Kai'sa",
+        // 518: "Neeko",
+        // 142: "Zoe",
+        // 498: "Xayah",
+        // 517: "Sylas",
+        // 141: "Kayn",
+        // 516: "Ornn",
+        // 555: "Pyke",
+        // 164: "Camille",
+        // 246: "Qiyana",
+        // 497: "Rakan",
+      default:
+      $championKey = "default";
+        break;
+    }

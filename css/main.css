@@ -1,0 +1,108 @@
+.right {
+  position: fixed;
+  right: 15px;
+}
+
+#modal_login {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: rgb(68, 68, 68);
+}
+
+#modal_join {
+  display: none;
+  position: fixed;
+  right: 20px;
+  top: 20px;
+  background-color: rgb(70, 70, 70);
+  border-radius: 3px;
+}
+
+.modal_login_contents,
+.modal_join_contents {
+  padding: 20px;
+}
+
+#info {
+  font-size: 4px;
+}
+
+#imgLOL {
+  width: 300px;
+  filter: drop-shadow(15px 15px 15px #000);
+}
+
+.main {
+  text-align: center;
+  /* position: relative; */
+}
+.tail {
+  text-align: center;
+}
+
+.search-txt {
+  outline: none;
+  width: 270px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: #20242c;
+  border: none;
+  font-size: 10pt;
+  font-weight: 200;
+  padding: 20px;
+}
+.input-txt {
+  outline: none;
+  border-radius: 15px;
+  background-color: #20242c;
+  border: none;
+  font-size: 10pt;
+  font-weight: 200;
+  padding: 5px;
+  margin: 5px;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus,
+input[type="password"]:hover {
+  background-color: #767f94;
+  transition: all 0.1s linear;
+}
+
+input[type="submit"] {
+  font-family: FontAwesome;
+}
+
+.btn {
+  width: 60px;
+  height: 30px;
+  color: rgb(194, 194, 194);
+  background-color: #20242c;
+  border: none;
+  outline: none;
+}
+
+.btn:focus {
+  background-color: #767f94;
+}
+.searchIcon {
+  background-color: #45515e;
+  border: none;
+  font-size: 20px;
+  outline: none;
+}
+
+.searchIcon:focus {
+  outline: dashed;
+}
+
+.challenger {
+  display: inline-flex;
+}
+
+.challengerBox1,
+.challengerBox2 {
+  margin: 0px 10px;
+}
