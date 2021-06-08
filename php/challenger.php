@@ -2,7 +2,7 @@
 <?php
 
     //챌린저 리그 정보
-    $api_key = "RGAPI-c669c035-0513-439a-8bb8-973a5e959f9a"; //유출금지 :: personal api key
+    $api_key = '{api-key}'; //유출금지 :: personal api key
     $url = "https://kr.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=".$api_key;
 
     $is_post = false;

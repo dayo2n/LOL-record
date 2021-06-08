@@ -2,7 +2,7 @@
 <?php
 
     //소환사 기본정보 
-    $api_key = "RGAPI-95ff83dc-f506-4fab-95c8-1d3a4396ce59"; //유출금지 :: personal api key
+    $api_key = '{api-key}'; //유출금지 :: personal api key
     $url = "https://kr.api.riotgames.com/lol/league/v4/challengerleagues/by-queue/RANKED_SOLO_5x5?api_key=".$api_key;
 
     $is_post = false;
