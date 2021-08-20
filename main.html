@@ -1,0 +1,212 @@
+<!-- 페이지 접속 시 보이는 메인화면  -->
+<!DOCTYPE >
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
+      integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M"
+      crossorigin="anonymous"
+    />
+    <title>League of Legends | @dayo2n</title>
+  </head>
+  <body>
+    <!-- 상단 로고와 로그인, 회원가입 파트를 갖출 부분 -->
+    <div class="header">
+      <span class="left">
+        <!-- <img src="./image/LogoLux.png" alt="" id="imgLux" /> -->
+        <!-- <img
+          src="./image/LogoLOL.png"
+          alt=""
+          id="imgLOLlogo"
+          onclick='location.href="../main.html"'
+        /> -->
+      </span>
+      <span class="right">
+        <input
+          type="button"
+          name="login-btn"
+          id="login-btn"
+          value="LOGIN"
+          class="btn"
+        />
+        <input
+          type="button"
+          name="join-btn"
+          id="join-btn"
+          value="JOIN"
+          class="btn"
+        />
+      </span>
+    </div>
+    <br />
+    <div class="main">
+      <video autoplay loop muted="muted" id="myVideo" width="500px">
+        <source src="./image/mainVideo.mp4" type="video/mp4" />
+      </video>
+      <h1>소환사 정보 검색</h1>
+      <br />
+      <form action="./php/search.php" method="GET">
+        <input
+          type="text"
+          class="search-txt"
+          name="summoner_name"
+          id="summoner_name"
+          placeholder="검색하고싶은 소환사의 이름을 입력하세요."
+        />
+        <button type="submit" class="searchIcon" id="summonerSearchBtn">
+          <i class="fas fa-search fa-lg"></i>
+        </button>
+      </form>
+    </div>
+    <br />
+    <div class="tail">
+      <h1>챔피언 정보 검색</h1>
+      <br />
+      <form action="" method="GET">
+        <input
+          type="text"
+          class="search-txt"
+          name="champion_name"
+          placeholder="검색하고싶은 챔피언의 이름을 입력하세요."
+        />
+        <button type="submit" class="searchIcon" id="championSearchBtn">
+          <i class="fas fa-search fa-lg"></i>
+        </button>
+      </form>
+      <br />
+      <p>라인별 챔피언 정보</p>
+      <input
+        type="button"
+        name="top-info"
+        id="top-info"
+        value="TOP"
+        class="btn"
+      />
+      <input type="button" name="jg-info" id="jg-info" value="JG" class="btn" />
+      <input
+        type="button"
+        name="mid-info"
+        id="mid-info"
+        value="MID"
+        class="btn"
+      />
+      <input type="button" name="ad-info" id="ad-info" value="AD" class="btn" />
+      <input
+        type="button"
+        name="sup-info"
+        id="sup-info"
+        value="SUP"
+        class="btn"
+      />
+      <br />
+      <br />
+      <span class="challenger">
+        <span class="challengerBox1">
+          <p>프로 관전</p>
+          <form action="./php/spectator_pro.php">
+            <button type="submit" class="searchIcon" id="spectateProBtn">
+              <i class="fas fa-video fa-lg"></i>
+            </button>
+          </form>
+        </span>
+        <span class="challengerBox2">
+          <p>챌린저 랭킹</p>
+          <form action="./php/challenger.php">
+            <button type="submit" class="searchIcon" id="challengerRankingBtn">
+              <i class="fas fa-crown fa-lg"></i>
+            </button>
+          </form>
+        </span>
+      </span>
+    </div>
+
+    <!-- 로그인 기능 구현 -->
+    <div class="memberLogin" id="modal_login">
+      <div class="modal_login_contents">
+        <div class="title">
+          <p>LOGIN</p>
+        </div>
+        <div class="content">
+          <form method="post" action="./php/login.php">
+            <span>ID :</span>
+            <input
+              type="text"
+              id="memberID"
+              name="memberID"
+              class="input-txt"
+            />
+            <br />
+            <span>PASSWORD :</span>
+            <input
+              type="password"
+              id="memberPW"
+              name="memberPW"
+              class="input-txt"
+            />
+            <br />
+            <input type="submit" value="login" id="login" class="btn" />
+            <input type="button" value="cancel" id="cancelLogin" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 회원가입  기능 구현 -->
+    <div class="memberJoin" id="modal_join">
+      <div class="modal_join_contents">
+        <div class="title">
+          <p>JOIN</p>
+        </div>
+        <div class="content">
+          <form method="post" action="./php/join.php">
+            <span>Summoner Name :</span>
+            <input
+              type="text"
+              name="memberName"
+              id="memberName"
+              class="input-txt"
+              required
+            />
+            <br />
+            <span id="info">프로필에 등록할 내 소환사 이름</span>
+            <br />
+            <span>ID :</span>
+            <input
+              type="text"
+              name="memberID"
+              id="memberID"
+              class="input-txt"
+              pattern="[A-Za-z0-9]{6,15}"
+              required
+            />
+            <br />
+            <span id="info"
+              >아이디는 영어 대소문자와 숫자를 포함한 6자 이상 15자 이내
+            </span>
+            <br />
+            <span>PASSWORD :</span>
+            <input
+              type="password"
+              name="memberPW"
+              id="memberPW"
+              class="input-txt"
+              pattern="^.*(?=^.{8,15}$)(?=.*\d)(?=.*[a-zA-Z])(?=.*[!@#$%^&+=]).*"
+              required
+            />
+            <br /><span id="info"
+              >비밀번호는 영어 대소문자, 숫자, 특수기호를 포함한 8자 이상 15자
+              이내</span
+            >
+            <br />
+            <input type="submit" value="join" id="join" class="btn" />
+            <input type="button" value="cancel" id="cancelJoin" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="./js/mainScript.js"></script>
+    <script src="./js/profile.js"></script>
+  </body>
+</html>
