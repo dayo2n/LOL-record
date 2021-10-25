@@ -14,6 +14,9 @@
 ## 📷 Design 
 
 ## 📸 ScreenShot
+<img src="image/ScreenShot/screenshot_main.png" width="800px">
+<img src="image/ScreenShot/screenshot_profile.png" width="800px">
+<img src="image/ScreenShot/screenshot_ranking.png" width="800px">
 
 ## 📌 Memo
 - 일부 이미지가 로딩되지않음
